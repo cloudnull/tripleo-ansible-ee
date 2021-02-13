@@ -1,0 +1,9 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+    - name: Run debug
+      debug:
+        msg: "{{ playbook_dir }} {{ ansible_fqdn }}"
