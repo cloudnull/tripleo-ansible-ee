@@ -44,3 +44,28 @@ With everything installed run a test playbook.
 ``` shell
 ansible-builder/bin/ansible-runner --debug playbook --container-image tripleo_ansible_ee test-playbook.yaml -i localhost,
 ```
+
+#### Getting the image from GitHub Packages
+
+To pull the pre-built image from github packages, you will need to login with an access token.
+
+``` shell
+podman login https://docker.pkg.github.com -u $USERNAME
+podman pull docker.pkg.github.com/cloudnull/tripleo-ansible-ee/tripleo_ansible_ee:main
+```
+
+#### Getting the image from Docker Hub
+
+The pre-built container image is available on docker hub.
+
+``` shell
+docker pull cloudnull/tripleo-ansible-ee
+```
+
+#### Getting the image from Quay
+
+The pre-built container image is available on quay.
+
+```
+podman pull quay.io/cloudnull/tripleo-ansible-ee
+```
