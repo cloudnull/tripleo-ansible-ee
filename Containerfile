@@ -45,7 +45,7 @@ RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/
 RUN chmod +x /usr/local/bin/dumb-init
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal
-RUN microdnf install -y openssh python3.8 && rm -rf /var/cache/{dnf,yum}
+RUN microdnf install -y openssh-clients python3.8 && rm -rf /var/cache/{dnf,yum}
 RUN /bin/python3.8 -m venv --upgrade /ansible-runner
 COPY --from=BUILD /usr/share/ansible/roles /usr/share/ansible/roles
 COPY --from=BUILD /usr/share/ansible/collections /usr/share/ansible/collections
