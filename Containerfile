@@ -1,5 +1,4 @@
 ARG VERSION=0.1.0
-ARG ANSIBLE_RUNNER=https://github.com/ansible/ansible-runner
 
 FROM quay.io/ansible/ansible-runner:latest
 
