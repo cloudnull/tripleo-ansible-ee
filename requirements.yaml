@@ -14,23 +14,6 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-roles:
-  - name: openstack-operations
-    scm: git
-    src: https://opendev.org/openstack/ansible-role-openstack-operations
-    version: master
-    trackbranch: master
+roles: []
 
-  # ansible-config_template action plugin
-  - name: config_template
-    scm: git
-    src: https://opendev.org/openstack/ansible-config_template
-    version: master
-    trackbranch: master
-
-collections:
-  - ansible.netcommon
-  - ansible.posix
-  - community.general
-  - openstack.cloud
-  - containers.podman
+collections: []

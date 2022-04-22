@@ -1,10 +1,9 @@
 ---
-version: 0.0.0
+version: 0.1.0
 
 dependencies:
   galaxy: requirements.yaml
   python: requirements.txt
-  system: bindep.txt
 
 additional_build_steps:
   prepend: |
